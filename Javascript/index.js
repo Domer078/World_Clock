@@ -6,7 +6,7 @@ function updateTime() {
 
   losAngelesDate.innerHTML = losAngelesCurrentTime.format("MMMM Do YYYY");
   losAngelesTime.innerHTML = losAngelesCurrentTime.format(
-    "h:mm:ss [<strong>A</strong>]"
+    "h:mm:ss [<strong>]A[</strong>]"
   );
 
   let capeTownElement = document.querySelector("#Cape-Town");
@@ -16,7 +16,7 @@ function updateTime() {
 
   capeTownDate.innerHTML = capeTownCurrentTime.format("MMMM Do YYYY");
   capeTownTime.innerHTML = capeTownCurrentTime.format(
-    "h:mm:ss [<strong>A</strong>]"
+    "h:mm:ss [<strong>]A[</strong>]"
   );
 }
 updateTime();
