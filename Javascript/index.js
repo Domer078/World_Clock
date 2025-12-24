@@ -4,7 +4,7 @@ function updateTime() {
   let losAngelesTime = losAngelesElement.querySelector(".time");
   let losAngelesCurrentTime = moment().tz("America/Los_Angeles");
 
-  losAngelesDate.innerHTML = losAngelesCurrentTime.format("MMMM DO YYYY");
+  losAngelesDate.innerHTML = losAngelesCurrentTime.format("MMMM Do YYYY");
   losAngelesTime.innerHTML = losAngelesCurrentTime.format(
     "h:mm:ss [<strong>A</strong>]"
   );
@@ -14,7 +14,7 @@ function updateTime() {
   let capeTownTime = capeTownElement.querySelector(".time");
   let capeTownCurrentTime = moment().tz("Africa/Cape Town");
 
-  capeTownDate.innerHTML = capeTownCurrentTime.format("MMMM DO YYYY");
+  capeTownDate.innerHTML = capeTownCurrentTime.format("MMMM Do YYYY");
   capeTownTime.innerHTML = capeTownCurrentTime.format(
     "h:mm:ss [<strong>A</strong>]"
   );
