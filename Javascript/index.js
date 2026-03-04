@@ -13,8 +13,8 @@ function updateTime() {
 
   let monacoElement = document.querySelector("#Monaco");
   if (monacoElement) {
-    let monacoDate = capeTownElement.querySelector(".date");
-    let monacoTime = capeTownElement.querySelector(".time");
+    let monacoDate = monacoElement.querySelector(".date");
+    let monacoTime = monacoElement.querySelector(".time");
     let monacoCurrentTime = moment().tz("Europe/Monaco");
 
     monacoDate.innerHTML = monacoCurrentTime.format("MMMM Do YYYY");
