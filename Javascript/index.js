@@ -11,14 +11,14 @@ function updateTime() {
     );
   }
 
-  let capeTownElement = document.querySelector("#Cape-Town");
-  if (capeTownElement) {
-    let capeTownDate = capeTownElement.querySelector(".date");
-    let capeTownTime = capeTownElement.querySelector(".time");
-    let capeTownCurrentTime = moment().tz("Africa/Cape Town");
+  let monacoElement = document.querySelector("#Monaco");
+  if (monacoElement) {
+    let monacoDate = capeTownElement.querySelector(".date");
+    let monacoTime = capeTownElement.querySelector(".time");
+    let monacoCurrentTime = moment().tz("Europe/Monaco");
 
-    capeTownDate.innerHTML = capeTownCurrentTime.format("MMMM Do YYYY");
-    capeTownTime.innerHTML = capeTownCurrentTime.format(
+    monacoDate.innerHTML = monacoCurrentTime.format("MMMM Do YYYY");
+    monacoTime.innerHTML = monacoCurrentTime.format(
       "h:mm:ss [<strong>]A[</strong>]"
     );
   }
